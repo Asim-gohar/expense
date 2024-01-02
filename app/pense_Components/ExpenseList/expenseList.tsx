@@ -51,13 +51,7 @@ export default function AgbList() {
     const onUpdatePense = (expenseRecord: penseType) => {
       setPenses(penses.map((e) => (e.id === expenseRecord.id ? expenseRecord : e)));
       setTotal(total - pense.amount + expenseRecord.amount);
-      setpense({
-        id: '',
-        amount: 0,
-        category: '',
-        note: '',
-        date: ''
-      })
+      
     }
 
   return (
