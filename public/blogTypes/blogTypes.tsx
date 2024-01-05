@@ -5,7 +5,7 @@ export type blogType = {
     title : string ,
     content : string ,
     description : string
-}
+} 
 export type blogModalType = {
    isOpen : boolean ,
    onAddBlogs : (blog: blogType) => void,
@@ -19,3 +19,11 @@ export type BlogDisplayType = {
     blog : blogType ,
    
 }
+export type blogSlugTypes = Array<{
+    id: string;
+    
+    title: string;
+    content: string;
+    
+   
+  }> & { find: (callback: (item: { slug: string }) => boolean) => any };

@@ -103,7 +103,7 @@ export default function AgbList() {
         <p className="text-2xl font-semibold mb-4">Total: PKR{total.toFixed(2)}</p>
       </div>
       <div className={isOpen ? 'hidden' : 'show '}>
-        <BarChart width={500} height={300} data={penses} className='bg-black b'>
+        <BarChart width={500} height={300} data={penses} className='bg-0A213B'>
           <CartesianGrid stroke="#eee" strokeDasharray="5 5" />
           <XAxis dataKey="category" stroke="#fff" tick={{ fill: '#fff', fontWeight: 'bold' }} />
           <YAxis stroke="#fff" tick={{ fill: '#fff', fontWeight: 'bold' }} />

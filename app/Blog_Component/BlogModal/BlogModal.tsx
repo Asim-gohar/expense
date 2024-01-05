@@ -27,7 +27,7 @@ export default function BlogModal({ onAddBlogs, isOpen, onCloseBlogs, onUpdateBl
 
   const handleUpdateBlog = () => {
     const updateBlog: blogType = {
-      id: blog.id,
+      id: blog.id, 
       title: title || blog.title,
       content: content || blog.content,
       description : description || blog.description
@@ -64,7 +64,7 @@ export default function BlogModal({ onAddBlogs, isOpen, onCloseBlogs, onUpdateBl
                 id='content'
                 value={content}
                 onChange={(e) => SetContent(e.target.value)}
-                className="w-full border p-2 mb-2"
+                className="w-full border p-2 mb-2 text-ellipsis overflow-hidden"
               />
                <label className="text-lg" htmlFor='description'>Description</label>
               <textarea
@@ -72,7 +72,7 @@ export default function BlogModal({ onAddBlogs, isOpen, onCloseBlogs, onUpdateBl
                 id='description'
                 value={description}
                 onChange={(e) => SetDescription(e.target.value)}
-                className="w-full border p-2 mb-2"
+                className="w-full border p-2 mb-2 "
               />
               <div>
                 {blog.id !== '' ?
